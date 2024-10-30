@@ -18,6 +18,8 @@ jobs:
         with:
          python-version: '3.9'
       - name: Install python packages
-        run: python -m install pytest
+        run: |
+          python -m install --upgrade pip
+          pip install tox tox-gh-actions
       - name: Run tests
         run: pytest
