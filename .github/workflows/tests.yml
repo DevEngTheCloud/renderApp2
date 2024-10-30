@@ -19,6 +19,6 @@ jobs:
          python-version: '3.9'
       - name: Install python packages
         run: |
-          python -m install pip install --upgrade pip
+          python -m pip install --upgrade pip
       - name: Run tests
         run: pytest
